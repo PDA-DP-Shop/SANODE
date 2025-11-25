@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanode Healthcare | Partner Workspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./css/dashboard.css" as="style" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="icon" type="image/png" href="./images/LOGO.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            src="./images/SANODE-LOGO.png"
+            alt="Sanode Healthcare logo"
+            width="140"
+            height="48"
+            decoding="async"
+            loading="eager"
+          />
+        </div>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="login.html">logout</a></li>
+            <li class="nav-cta user-nav-actions">
+              <a class="btn secondary" href="product.html#pricing">View Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="dashboard-hero" id="home">
+        <div class="container">
+          <p class="eyebrow text-green">Partner Workspace</p>
+          <h1>Add products and sync them with the live product page</h1>
+          <p>
+            Use the form below to create new nutraceutical SKUs, upload imagery, and define
+            multi-country pricing. Saved items appear instantly on the public portfolio page for
+            review (data stored locally in your browser for now).
+          </p>
+          <div class="hero-metrics">
+            <div>
+              <p class="hero-label">Publishing SLA</p>
+              <p class="hero-value">2 hrs avg</p>
+            </div>
+            <div>
+              <p class="hero-label">Active Markets</p>
+              <p class="hero-value">12 countries</p>
+            </div>
+            <div>
+              <p class="hero-label">Pending Reviews</p>
+              <p class="hero-value accent">3 items</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace-overview">
+        <div class="container">
+          <div class="stats-grid">
+            <article class="stat-card">
+              <p class="stat-label">Live SKUs</p>
+              <p class="stat-value">48</p>
+              <p class="stat-trend trend-up">+6 this month</p>
+            </article>
+            <article class="stat-card">
+              <p class="stat-label">Drafts</p>
+              <p class="stat-value">5</p>
+              <p class="stat-trend trend-neutral">Awaiting QA</p>
+            </article>
+            <article class="stat-card">
+              <p class="stat-label">Assets Uploaded</p>
+              <p class="stat-value">132</p>
+              <p class="stat-trend trend-up">24 new</p>
+            </article>
+            <article class="stat-card">
+              <p class="stat-label">Average Margin</p>
+              <p class="stat-value">42%</p>
+              <p class="stat-trend trend-down">-2% vs last qtr</p>
+            </article>
+          </div>
+          <div class="overview-panels">
+            <article class="activity-panel glass-panel">
+              <div class="panel-header">
+                <h3>Recent activity</h3>
+                <span class="status-pill">Auto-synced</span>
+              </div>
+              <ul class="activity-list">
+                <li>
+                  <div>
+                    <p>Cranberry Guard reformulation</p>
+                    <small>Pricing updated for UAE market</small>
+                  </div>
+                  <span>3m ago</span>
+                </li>
+                <li>
+                  <div>
+                    <p>Added Zinc + C sachet</p>
+                    <small>Files awaiting QA approval</small>
+                  </div>
+                  <span>1h ago</span>
+                </li>
+                <li>
+                  <div>
+                    <p>Revoked old turmeric shots</p>
+                    <small>Archive request from US team</small>
+                  </div>
+                  <span>Yesterday</span>
+                </li>
+              </ul>
+            </article>
+            <article class="activity-panel glass-panel">
+              <div class="panel-header">
+                <h3>Quick links</h3>
+                <span class="status-pill neutral">Shortcuts</span>
+              </div>
+              <div class="link-grid">
+                <a href="#add-product" class="quick-link">Create SKU</a>
+                <a href="product.html#pricing" class="quick-link">Pricing table</a>
+                <a href="about.html#quality" class="quick-link">QA Playbook</a>
+                <a href="index.html#contact" class="quick-link">Escalate issue</a>
+              </div>
+              <p class="panel-note">
+                Need advanced workflows? Email <a href="mailto:exports@sanodehealthcare.com">exports@sanodehealthcare.com</a>.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-form-section" id="add-product">
+        <div class="container">
+          <div class="form-layout">
+            <div class="form-card" data-animate="fade-up">
+              <div class="form-card__header">
+                <h2>Add a new product</h2>
+                <span class="status-pill accent">Avg. approval 36h</span>
+              </div>
+              <form id="productForm" class="form-grid">
+              <div>
+                <label for="productName">Product name</label>
+                <input type="text" id="productName" name="productName" required />
+              </div>
+              <div>
+                <label for="productDescription">Short description</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+              </div>
+              <div>
+                <label for="productFeatures">Key highlights (one per line)</label>
+                <textarea id="productFeatures" name="productFeatures" placeholder="Feature A&#10;Feature B"></textarea>
+              </div>
+              <div>
+                <label for="productImage">Product image</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*" required />
+              </div>
+              <div>
+                <label>Pricing per country &amp; dosage form</label>
+                <table class="price-matrix">
+                  <thead>
+                    <tr>
+                      <th>Country</th>
+                      <th>Capsule</th>
+                      <th>Tablet / Caplet</th>
+                      <th>Powder / Sachet</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>India (₹)</th>
+                      <td><input type="number" name="price-india-capsule" min="0" step="0.01" /></td>
+                      <td><input type="number" name="price-india-tablet" min="0" step="0.01" /></td>
+                      <td><input type="number" name="price-india-powder" min="0" step="0.01" /></td>
+                    </tr>
+                    <tr>
+                      <th>United Arab Emirates (AED)</th>
+                      <td><input type="number" name="price-uae-capsule" min="0" step="0.01" /></td>
+                      <td><input type="number" name="price-uae-tablet" min="0" step="0.01" /></td>
+                      <td><input type="number" name="price-uae-powder" min="0" step="0.01" /></td>
+                    </tr>
+                    <tr>
+                      <th>Kenya (KES)</th>
+                      <td><input type="number" name="price-kenya-capsule" min="0" step="0.01" /></td>
+                      <td><input type="number" name="price-kenya-tablet" min="0" step="0.01" /></td>
+                      <td><input type="number" name="price-kenya-powder" min="0" step="0.01" /></td>
+                    </tr>
+                    <tr>
+                      <th>United States ($)</th>
+                      <td><input type="number" name="price-usa-capsule" min="0" step="0.01" /></td>
+                      <td><input type="number" name="price-usa-tablet" min="0" step="0.01" /></td>
+                      <td><input type="number" name="price-usa-powder" min="0" step="0.01" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn secondary">Save Product</button>
+              </div>
+              <p class="status-message" data-status></p>
+              </form>
+              <div class="note-box">
+                Images and product data are stored in your browser for now. Connect a backend endpoint
+                to persist uploads inside the <code>images</code> folder on the server.
+              </div>
+            </div>
+            <aside class="form-side-panel glass-panel">
+              <h3>Submission checklist</h3>
+              <ul class="checklist">
+                <li>High-resolution imagery (2000px+) ready</li>
+                <li>Regulatory copy reviewed by compliance</li>
+                <li>Country-specific taxes baked into pricing</li>
+                <li>Translations uploaded for EU &amp; MENA</li>
+              </ul>
+              <div class="side-panel-card">
+                <p class="side-title">Need a template?</p>
+                <p>Duplicate a top performing SKU and only change delta items.</p>
+                <a class="btn tertiary" href="product.html#saved-products">Browse catalog</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-list-section" id="saved-products">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <h2>Saved products</h2>
+              <p>These items will appear on the public product page with the pricing matrix above.</p>
+            </div>
+            <button type="button" class="btn ghost" id="bulkExportBtn">Export CSV</button>
+          </div>
+          <div class="product-list-wrapper glass-panel">
+            <ul class="product-list" id="productList"></ul>
+            <div class="empty-state" data-empty>
+              <p>No products yet.</p>
+              <p class="muted">New entries will materialize here immediately after you hit save.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3 style="color: #f07e00;">Need help?</h3>
+          <p>Email <a href="mailto:exports@sanodehealthcare.com">exports@sanodehealthcare.com</a> for
+            onboarding assistance.</p>
+        </div>
+        <div>
+          <h4 style="color: #f07e00;">Support hours</h4>
+          <p>Mon – Sat | 9 AM – 6 PM (IST)</p>
+        </div>
+      </div>
+      <p class="footer-copy" style="color: #f07e00;">© <span id="year"></span> Sanode Healthcare.</p>
+    </footer>
+
+    <script src="./js/base.js" defer></script>
+    <script src="./js/dashboard.js" defer></script>
+  </body>
+</html>
+

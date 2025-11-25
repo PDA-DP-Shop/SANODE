@@ -1,0 +1,229 @@
+@import url('./base.css');
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.category-card {
+  background: var(--white);
+  border: 1px solid rgba(13, 28, 46, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 25px rgba(8, 15, 30, 0.08);
+}
+
+.category-card h4 {
+  margin-top: 0;
+  color: var(--color-secondary);
+}
+
+.category-card ul {
+  padding-left: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  background: var(--white);
+  border: 1px solid rgba(13, 28, 46, 0.08);
+  border-radius: 20px;
+  padding: 1.75rem;
+  box-shadow: 0 20px 40px rgba(8, 15, 30, 0.08);
+}
+
+.portfolio-card h3 {
+  margin-top: 0;
+}
+
+.portfolio-card ul {
+  padding-left: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.region-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(13, 28, 46, 0.1);
+}
+
+.region-card h4 {
+  margin-top: 0;
+  color: var(--color-secondary);
+}
+
+.region-card ul {
+  padding-left: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  margin: 1rem 0 0;
+}
+
+.detail-list li {
+  list-style: disc;
+}
+
+.section-note {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.pricing-panel {
+  background: var(--bg-light);
+  padding: 3rem 0;
+  border-top: 1px solid rgba(13, 28, 46, 0.06);
+  border-bottom: 1px solid rgba(13, 28, 46, 0.06);
+}
+
+.pricing-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.pricing-controls {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(8, 15, 30, 0.08);
+  border: 1px solid rgba(13, 28, 46, 0.06);
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.control-group label {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.control-group select,
+.control-group input {
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(13, 28, 46, 0.15);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.pricing-footnote {
+  font-size: 0.9rem;
+  color: rgba(13, 28, 46, 0.7);
+  margin: 0;
+}
+
+.product-gallery {
+  padding: 3rem 0 4rem;
+  background: linear-gradient(180deg, #fff, #f8fbff);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 25px 55px rgba(13, 28, 46, 0.12);
+  border: 1px solid rgba(13, 28, 46, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.product-media {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f8fb;
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.product-media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(13, 28, 46, 0.08);
+}
+
+.product-content h3 {
+  margin-top: 0;
+}
+
+.product-specs {
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.product-specs li {
+  list-style: disc;
+}
+
+.price-display {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.price-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(13, 28, 46, 0.6);
+}
+
+.price-display strong {
+  font-size: 1.9rem;
+  color: var(--color-secondary);
+}
+
+.pricing-note {
+  font-size: 0.9rem;
+  color: rgba(13, 28, 46, 0.6);
+}
+

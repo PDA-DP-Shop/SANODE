@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanode Healthcare | Partner Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./css/login.css" as="style" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" type="image/png" href="./images/LOGO.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            src="./images/SANODE-LOGO.png"
+            alt="Sanode Healthcare logo"
+            width="140"
+            height="48"
+            decoding="async"
+            loading="eager"
+          />
+        </div>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="login.html" aria-current="page">Login</a></li>
+            <li class="nav-cta">
+              <a class="btn secondary" href="index.html#contact">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="auth-section">
+        <div class="container auth-grid">
+          <div class="welcome-card" data-animate="fade-up">
+            <div class="success-chip">99.95% uptime</div>
+            <h1>Partner Login</h1>
+            <p>
+              Manage international pricing, launch SKUs faster, and stay in sync with the export
+              ops team through this secure portal.
+            </p>
+            <ul class="feature-list">
+              <li>Real-time QA alerts</li>
+              <li>One-click media approvals</li>
+              <li>Automated region rollouts</li>
+            </ul>
+            <div class="badge-grid">
+              <div>
+                <p class="badge-label">Active partners</p>
+                <p class="badge-value">64</p>
+              </div>
+              <div>
+                <p class="badge-label">Average response</p>
+                <p class="badge-value accent">42 mins</p>
+              </div>
+            </div>
+          </div>
+          <div class="auth-card" data-animate="fade-up">
+            <p class="eyebrow text-green">Secure Access</p>
+            <h2>Welcome back</h2>
+            <p>Enter the provided credentials to manage live pricing and add new products.</p>
+            <form id="loginForm" class="auth-form">
+              <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="SANODE" required />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="@SANODE"
+                  required
+                />
+              </div>
+              <div class="login-actions">
+                <label class="checkbox">
+                  <input type="checkbox" name="remember" />
+                  <span>Remember me</span>
+                </label>
+                <a href="mailto:exports@sanodehealthcare.com">Forgot access?</a>
+              </div>
+              <div class="auth-error" data-error></div>
+              <button type="submit" class="btn secondary">Access workspace</button>
+            </form>
+            <p class="auth-note">
+              Default credentials: <strong>SANODE / @SANODE</strong>. Update this logic before going
+              live.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3 style="color: #f07e00;">Need Assistance?</h3>
+          <p>
+            Contact the Sanode Healthcare export team for onboarding support or to reset your secure
+            access.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #f07e00;">Contact Us</h4>
+          <p>Email: <a href="mailto:info@sanodehealthcare.com">info@sanodehealthcare.com</a></p>
+          <p>Phone: +91-XXXXXXXXXX</p>
+        </div>
+      </div>
+      <p class="footer-copy" style="color: #f07e00;">© <span id="year"></span> Sanode Healthcare.</p>
+    </footer>
+
+    <script src="./js/base.js" defer></script>
+    <script src="./js/login.js" defer></script>
+  </body>
+</html>
+
+
+
